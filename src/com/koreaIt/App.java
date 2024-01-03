@@ -13,7 +13,7 @@ public class App {
 		System.out.print(START_STRING);
 		
 		while(true) {
-			System.out.print(INPUT_CMD);
+			System.out.println(INPUT_CMD);
 			String cmd = sc.nextLine();
 			Optional<Request> request = Optional.ofNullable(Request.of(cmd));
 			if(request.isEmpty()){

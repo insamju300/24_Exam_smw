@@ -20,6 +20,7 @@ public class WiseSayingController {
 		}else if(cmdType == CMDType.LIST){
 			list();
 		}else if(cmdType == CMDType.DELETE){
+			//delete(request.getId());
 			
 		}else if(cmdType == CMDType.UPDATE){
 			
@@ -28,6 +29,8 @@ public class WiseSayingController {
 		}
 
 	}
+
+
 
 	private void list() {
 		System.out.print(COLUMS);

@@ -22,7 +22,7 @@ public class Request {
 		CMDType cmdType = null;
 		int id = -1;
 		
-		String[] inputs = cmd.split("?id=");
+		String[] inputs = cmd.split("//?id=");
 		for(CMDType oneType:CMDType.values()) {
 			if(oneType.getDescriotion().equals(inputs[0])) {
 				cmdType = oneType;
